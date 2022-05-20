@@ -1,0 +1,196 @@
+<!doctype html>
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_token" content="kKeis29PQOc9tXF5BFFNllHnjiONIA7turIifqYw">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+
+
+    <link href="css/link.css" rel="stylesheet">
+    <link href="css/avatar.css" rel="stylesheet">
+    <link href="css/connect.css" rel="stylesheet">
+
+
+
+
+
+    <title>GIcard</title>
+
+
+
+</head>
+
+
+<body>
+
+    <div id="wrap">
+
+        <div id="app">
+
+
+
+
+            <div id="top">
+
+                <div class="title">Connect</div>
+
+                <img class="close" src="icons/close.svg" onclick="window.location.href='index.html'" />
+
+            </div>
+
+
+
+            <div id="content">
+
+                <div class="card-preview">
+
+                    <div id="avatar-wrap">
+
+                        <img id="avatar-img" class="" src="images/k2.jpg" />
+
+                    </div>
+
+                    <div class="right">
+
+                        <div class="title">Kanchon<br>Kumar<br>Bishnu</div>
+
+                        <div class="note">Director at<br>GetinCard (pvt.) Limited</div>
+
+                    </div>
+
+                </div>
+
+                <div class="subtitle">Share your contact information with Kanchon!</div>
+
+                <div id="form">
+
+                    <form method="POST" action="https://introcardbd.app/connect/submit" novalidate>
+
+                        <input type="hidden" name="_token" value="kKeis29PQOc9tXF5BFFNllHnjiONIA7turIifqYw">
+                        <div>
+
+
+                            <div class="input-top">
+
+                                <div class="input-tag">Hello Kanchon, my name is...</div>
+
+
+
+                            </div>
+
+
+                            <div class="input-box   tagged   ">
+
+                                <input id="name" type="text" name="name" placeholder="" value="" autocomplete="off"
+                                    class="" maxlength="100" autofocus required>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div>
+
+
+                            <div class="input-top">
+
+                                <div class="input-tag">You can reach me at...</div>
+
+
+
+                            </div>
+
+
+                            <div class="input-box   tagged   " id="email-box">
+
+                                <input id="email" type="email" name="email" placeholder="Email address" value=""
+                                    autocomplete="off" class="" maxlength="100" autofocus required>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div>
+
+
+                            <div class="input-top">
+
+                                <div class="input-tag">Telephone number</div>
+
+
+
+                                <div class="input-note">i.e. +8801234567890</div>
+
+
+                            </div>
+
+
+                            <div class="input-box   tagged   " id="telephone-box">
+
+                                <input id="telephone" type="text" name="telephone" placeholder="With country code"
+                                    value="" autocomplete="off" class="" maxlength="100" required>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <input type="hidden" id="slug" name="slug" value=kanchon>
+
+                        <div id="actions">
+
+                            <button class="button bordered highlight first" type="submit">
+
+                                SEND
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+
+
+</html>

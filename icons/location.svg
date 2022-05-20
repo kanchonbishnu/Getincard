@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g id="ICON" transform="translate(6.25 7.25)" opacity="0.95">
+        <rect id="Rectangle_24" width="32" height="32" rx="16" transform="translate(-6.25 -7.25)" fill="none" opacity="0"/>
+        <g id="location_icon" transform="translate(-158.25 -177.25)">
+            <rect id="box" width="16" height="16" transform="translate(160 178)" fill="none"/>
+            <path id="Path_3" d="M10.6,2A5.6,5.6,0,0,0,5,7.6C5,11.8,10.6,18,10.6,18s5.6-6.2,5.6-10.4A5.6,5.6,0,0,0,10.6,2Zm0,7.6a2,2,0,1,1,2-2A2,2,0,0,1,10.6,9.6Z" transform="translate(157.4 176)" fill="#ff5900"/>
+        </g>
+    </g>
+</svg>

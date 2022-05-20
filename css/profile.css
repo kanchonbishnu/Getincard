@@ -1,0 +1,326 @@
+#app {
+    background: unset;
+}
+
+#theme {
+    background: #121212;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 24px auto auto 48px 1fr;
+    grid-template-areas: ". . ."
+        ". top ."
+        ". content ."
+        ". . ."
+        ". . .";
+}
+
+#top {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+#top #logo {
+    height: 21px;
+    margin-right: auto;
+}
+
+#top .button {
+    padding: 8px 12px;
+}
+
+#top .button.last {
+    margin-right: -12px;
+    padding: 8px 12px;
+}
+
+#top .button:hover {
+    background: #333333;
+    color: white;
+    border-radius: 18px;
+}
+
+.card-preview {
+    margin: 0 0 40px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 48px;
+}
+
+.actions #save-contact-button {
+    margin-right: 16px;
+}
+
+.actions #edit-profile-button,
+.actions #connect-profile-button {
+    text-align: center;
+}
+
+.links-wrap {
+    position: relative;
+    display: grid;
+    align-items: center;
+    margin: 0 -40px 40px;
+}
+
+.links-wrap #previous,
+.links-wrap #next {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.links-wrap #previous:hover,
+.links-wrap #next:hover {
+    opacity: .8;
+}
+
+.links {
+    display: flex;
+    overflow: scroll;
+    padding-left: 40px;
+}
+
+.links .link {
+    width: 64px;
+    height: 64px;
+    margin-right: 22px;
+    border-radius: 32px;
+    background: #262626;
+    cursor: pointer;
+}
+
+.links .link:hover {
+    background: #2E2E2E;
+}
+
+.links::-webkit-scrollbar {
+    display: none;
+}
+
+.links {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#button-links-left,
+#button-links-right {
+    position: absolute;
+    display: none;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    background: #666666;
+    cursor: pointer;
+}
+
+#button-links-left:hover,
+#button-links-right:hover {
+    background: #808080;
+}
+
+#button-links-left {
+    left: 16px;
+}
+
+#button-links-right {
+    right: 16px;
+}
+
+.attributes {
+    display: grid;
+    margin: 48px 0 0;
+}
+
+.attribute {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.attribute .icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 28px;
+}
+
+.attribute .value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #B3B3B3;
+}
+
+.attribute .action {
+    margin-left: auto;
+    opacity: .6
+}
+
+.attribute:hover .action {
+    opacity: .8
+}
+
+
+
+#theme.light {
+    background: #EBEBEB;
+}
+
+#theme.light p {
+    color: #000000
+}
+
+#theme.light .title {
+    color: #0F0F0F;
+}
+
+#theme.light .button:not(.highlight),
+#theme.light .button.bordered:not(.highlight),
+#theme.light .link {
+    color: #1A1A1A;
+    background: #D9D9D9;
+}
+
+#theme.light .button.bordered:hover:not(.highlight),
+#theme.light .link:hover {
+    background: #E0E0E0;
+}
+
+#theme.light #button-menu,
+#theme.light #button-login {
+    background: none;
+}
+
+#theme.light #button-menu:hover,
+#theme.light #button-login:hover {
+    background: #D9D9D9;
+}
+
+#theme.light .attribute .value {
+    color: #404040;
+}
+
+#theme.light .attribute .action {
+    opacity: .9;
+}
+
+#theme.light .card-preview {
+    background: #D9D9D9;
+    border: 1px solid #808080;
+}
+
+#theme.light .card-preview .right .note {
+    color: #4D4D4D;
+}
+
+
+
+#theme.groovy {
+    background-image: linear-gradient(to left, #0527B3, #4163ef)
+}
+
+#theme.groovy p {
+    color: #FFFFFF;
+}
+
+#theme.groovy .title {
+    color: #FFFFFF;
+}
+
+#theme.groovy .button:not(.highlight),
+#theme.groovy .button.bordered:not(.highlight),
+#theme.groovy .link {
+    color: #FFFFFF;
+    background: #FFFFFF40;
+}
+
+#theme.groovy .button.bordered:not(.highlight) {
+    border: 1px solid white;
+}
+
+#theme.groovy .button.bordered.highlight {
+    color: #2343C7;
+    background: #FFFFFFE6;
+}
+
+#theme.groovy .button.bordered.highlight:hover {
+    background: #FFFFFFF0;
+}
+
+#theme.groovy .button.bordered:hover:not(.highlight),
+#theme.groovy .link:hover {
+    background: #FFFFFF32;
+}
+
+#theme.groovy #button-menu,
+#theme.groovy #button-login {
+    background: none;
+}
+
+#theme.groovy #button-shop {
+    color: white;
+}
+
+#theme.groovy #button-menu:hover,
+#theme.groovy #button-shop:hover,
+#theme.groovy #button-login:hover {
+    background: #FFFFFF32;
+}
+
+#theme.groovy .attribute .value {
+    color: #CCCCCC;
+}
+
+#theme.groovy .attribute .action {
+    opacity: 1;
+}
+
+#theme.groovy .card-preview {
+    background: #FFFFFF40;
+    border: 1px solid #FFFFFF;
+}
+
+#theme.groovy .card-preview .right .note {
+    color: #E6E6E6;
+}
+
+
+
+
+@media only screen and (max-width: 395px) {
+
+    #theme {
+        grid-template-columns: 32px 1fr 32px;
+    }
+
+    #avatar-wrap,
+    #avatar-img {
+        width: 128px;
+    }
+
+    .links-wrap {
+        margin: 0 -32px 40px;
+    }
+
+    .links {
+        padding-left: 32px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    #theme {
+        min-height: 100vh;
+    }
+
+}
